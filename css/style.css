@@ -1,0 +1,308 @@
+body {
+	padding-top: 50px;
+}
+
+#myNavbar {
+	text-align: center;
+}
+
+@font-face {
+	font-family: KaushanScript-Regular; /* Гарнитура шрифта */
+	src: url(../fonts/KaushanScript-Regular.otf); /* Путь к файлу со шрифтом */
+}
+
+.navbar-brand {
+	font-family: KaushanScript-Regular;
+}
+
+.navbar-brand span:first-child {
+	color: red;
+}
+
+.navbar-brand span:nth-child(2) {
+	color: orange;
+}
+
+.navbar-brand span:last-child {
+	color: orange;
+}
+
+.navbar-brand {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.navbar-brand:hover span {
+	color: white;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+#about {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#about img {
+	max-width: 268px;
+	height: auto;
+	border: 5px solid #ff4000;
+}
+
+.va-center {
+  vertical-align: middle;
+  float: none;
+  display: inline-block;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.jumbotron-white {
+	background-color: white;
+}
+
+.jumbotron-orange {
+	background-color: #ff4000;
+}
+
+#technologies img {
+	max-width: 205px;
+	height: auto;
+	border: 5px solid transparent;
+	transition: 0.3s;
+}
+
+#technologies img:hover {
+	border: 5px solid grey;
+	transition: 0.3s;
+}
+
+#col-13 {
+	width: 12.5%;
+}
+
+[class*="col-"] {
+	padding-bottom: 15px;
+	padding-top: 15px; 
+}
+
+.section-item-caption {
+	font-size: 2.5em;
+	font-weight: 500;
+}
+
+.white-color {
+	color: white;
+}
+
+.orange-color {
+	color: #ff4000;
+}
+
+hr {
+	max-width: 50px;
+	border-width: 3px;
+	margin: 20px auto;
+}
+
+.hr-white {
+	border-color: white;
+}
+
+.hr-orange {
+	border-color: #ff4000;
+}
+
+#portfolio [class*="col-"] img:first-child {
+	border-radius: 30px 0;
+	border: 4px solid gray;
+}
+
+img {
+	width: 100%;
+}
+
+.modal-caption {
+	padding-bottom: 12px;
+}
+
+.modal-close {
+	text-align: right;
+	padding-top: 10px;
+}
+
+.zoom {
+	
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	display: none;
+	background-color: rgba(255, 128, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border: 15px solid white;
+	border-radius: 45px 0;
+	transition: 0.4s;
+}
+
+#portfolio-item-1:hover .zoom,
+#portfolio-item-2:hover .zoom,
+#portfolio-item-3:hover .zoom,
+#portfolio-item-4:hover .zoom,
+#portfolio-item-5:hover .zoom,
+#portfolio-item-6:hover .zoom {
+	display: block;
+	transition: 0.4s;
+}
+
+#portfolio [class*="col-"] {
+	position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+	.modal-dialog {
+		width: 750px;
+		margin: 30px auto;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.modal-dialog {
+		width: 970px;
+		margin: 30px auto;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.modal-dialog {
+		width: 1170px;
+		margin: 30px auto;
+	}
+}
+
+.zoom-icon {
+	font-size: 5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*
+#contact button {
+	background-color: gray;
+}
+
+*/
+.form-control {
+	color: #ff4000;
+	font-size: 1.5em;
+	border: 2px solid transparent;
+
+}
+input[type="text"], input[type="email"] {
+	padding: 22px 12px;
+}
+
+textarea {
+	resize: none;
+}
+
+button[type="submit"] {
+	height: 49px;
+	font-weight: bold;
+	border: 3px solid gray;
+}
+
+.form-control:focus {
+	border-color: gray;
+	border-width: 2px;
+}
+
+#social-networks ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#social-networks ul li {
+	display: inline-block;
+	margin: 0 21px;
+}
+
+#social-networks .fa {
+	color: #9d9d9d;
+	transition: 0.4s;
+}
+
+#social-networks .fa:hover {
+	color: #ff4000;
+	transition: 0.4s;
+}
+
+.jumbotron-footer {
+	background-color: #222;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+.jumbotron-footer p {
+	font-size: 1.2em;
+
+}
+section {
+	margin-top: -50px;
+	padding-top: 50px;
+}
+
+.jumbotron-big {
+	padding: 80px 0;
+}
+
+.row {
+	padding-top: 20px;
+}
+
+.row:first-child {
+	padding-top: 0px;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus {
+	color: #ff4000;
+}
+
+.jumbotron-about {
+	padding: 120px 0;
+}
+
+.fa-chevron-circle-up {
+	color: #222;
+}
+
+.scrollup {
+	opacity:0.5;
+	position:fixed;
+	bottom:50px;
+	right: 60px;
+	display:none;
+	transition: 0.3s;
+	box-shadow: 0 0 5px 5px white;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.scrollup i {
+	line-height: 48px;
+	vertical-align: middle;
+}
+.scrollup:hover {
+	opacity: 0.8;
+	transform: scale(1.2, 1.2);
+	transition: 0.3s;
+}
