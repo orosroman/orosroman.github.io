@@ -7,8 +7,8 @@ body {
 }
 
 @font-face {
-	font-family: KaushanScript-Regular; /* Гарнитура шрифта */
-	src: url(../fonts/KaushanScript-Regular.otf); /* Путь к файлу со шрифтом */
+	font-family: KaushanScript-Regular;
+	src: url(../fonts/KaushanScript-Regular.otf);
 }
 
 .navbar-brand {
@@ -75,11 +75,13 @@ body {
 	max-width: 205px;
 	height: auto;
 	border: 5px solid transparent;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 
 #technologies img:hover {
 	border: 5px solid grey;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 
@@ -149,6 +151,7 @@ img {
 	margin: 0;
 	border: 15px solid white;
 	border-radius: 45px 0;
+	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
 
@@ -159,6 +162,7 @@ img {
 #portfolio-item-5:hover .zoom,
 #portfolio-item-6:hover .zoom {
 	display: block;
+	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
 
@@ -192,7 +196,8 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 /*
 #contact button {
@@ -237,11 +242,13 @@ button[type="submit"] {
 
 #social-networks .fa {
 	color: #9d9d9d;
+	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
 
 #social-networks .fa:hover {
 	color: #ff4000;
+	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
 
@@ -291,6 +298,7 @@ section {
 	bottom:50px;
 	right: 60px;
 	display:none;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	box-shadow: 0 0 5px 5px white;
 	border-radius: 50%;
@@ -303,6 +311,8 @@ section {
 }
 .scrollup:hover {
 	opacity: 0.8;
-	transform: scale(1.2, 1.2);
+	-webkit-transform: scale(1.2, 1.2);
+	        transform: scale(1.2, 1.2);
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
