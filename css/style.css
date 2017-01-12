@@ -153,20 +153,10 @@ img {
 	transition: 0.4s;
 }
 
-@media only screen {
-	.portfolio-item:hover .zoom {
-		display: block;
-		-webkit-transition: 0.4s;
-		transition: 0.4s;
-	}
-}
-
-@media only handheld {
-	.portfolio-item:active .zoom {
-		display: block;
-		-webkit-transition: 0.4s;
-		transition: 0.4s;
-	}
+html:not(.mobile) .portfolio-item:hover .zoom {
+	display: block;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .portfolio-item {

@@ -1,4 +1,7 @@
  $(document).ready(function(){
+ 	var md = new MobileDetect(navigator.userAgent),grade = md.mobileGrade();
+ 	window.mobileDetect = md;
+
 	$("#menu, #scroll-up").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
