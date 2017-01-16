@@ -1,0 +1,124 @@
+body {
+	text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+}
+
+main, header, footer {
+	margin: 0 auto;
+}
+
+main {
+	max-width: 90%;
+	width: 800px;
+}
+
+.item a, .item span {
+	vertical-align: middle;
+}
+
+.item {
+	background-color: lightblue;
+	border-left: 0.4rem solid transparent;
+	border-right: 0.4rem solid transparent;
+	padding: 10px 15px;
+	line-height: 70px;
+	margin-bottom: 0.4rem;
+}
+
+.item:hover {
+	border-left: 0.4rem solid gray;
+	border-right: 0.4rem solid gray;
+}
+
+.item img {
+	max-width: 70px;
+	max-height: 70px;
+	border-radius: 50%;
+	border: 0.4rem solid white;
+}
+
+.game-status {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+header div:first-child {
+	float: left;
+	width: 270px;
+}
+
+header div:last-child {
+	float: right;
+	width: 60px; 
+}
+
+header, footer {
+	max-width: 850px;
+	border: 0.2rem solid gray;
+	background-color: lightgray;
+}
+
+header {
+	height: 83px;
+	margin-bottom: 0.5rem;
+	border-top: none;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	padding: 1rem;
+}
+
+header img {
+	height: 60px;
+}
+
+footer {
+	margin-top: 0.5rem;
+	border-bottom: none;
+	border-top-right-radius: 2rem;
+	border-top-left-radius: 2rem;
+}
+
+footer p {
+	padding: 7px;
+	font-size: 1.2rem;
+}
+
+header span {
+	display: inline-block;
+	height: 18px;
+	width: 100%;
+	cursor: pointer;
+}
+
+header span:hover {
+	color: blue;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.active {
+	color: blue;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.item {
+		line-height: 35px;
+		padding: 5px;
+	}
+}
+

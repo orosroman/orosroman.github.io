@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons-wind.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+<body>
+	<header>
+		<h1>WEATHER FOR YOU</h1>
+	</header>
+	
+	<section class="form-city">
+		<form>
+			<input type="text" placeholder="Your city" required=""><button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+		</form>
+	</section>
+
+	<main>
+		<p id="city">City</p>
+
+		<div class="conainer-fluid first-row-line-height">
+			<div class="row">
+				<div class="col-lg-1 col-lg-offset-3 col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-1">
+					<i id="icon" class="wi"></i>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<span id="temp">Temp</span><i id="temp-system" class="wi wi-celsius" title="Click to change"> </i>
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-2">
+					<i id="wind-deg" class="wi wi-wind"></i>
+				</div>
+			</div>
+		</div>
+
+		<p id="description">Description</p>
+
+		<div class="conainer-fluid all-font">
+			<div class="row">
+				<div id="col-13" class="col-lg-1 visible-lg"></div>
+				<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-2">
+					<i class="wi wi-strong-wind"></i> <span id="wind-speed"></span>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4">
+					<i class="wi wi-barometer"></i> <span id="pressure"></span>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<i class="wi wi-humidity"></i> <span id="humidity"></span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>Copyright © 2016. All Rights Reserved | Designed & Coded by <a href="https://www.facebook.com/oros.roman" target="_blank">Roman Oros</a>.</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+.item {
+	background-color: rgba(255, 170, 15, 0.98);
+	padding: 1rem 2rem;
+	margin-bottom: 2rem;
+	border-radius: 1rem;
+	color: white;
+	transition: 0.3s;
+}
+
+.item:hover {
+	background-color: rgba(255, 190, 15, 1);
+	transition: 0.3s;
+}
+
+.item-title {
+	font-size: 2rem;
+}
+
+.item-description {
+	font-size: 1.6rem;
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+}
+
+section a {
+	padding: 0.5rem 1rem;
+	display: inline-block;
+	color: gray;
+	margin-bottom: 1rem;
+}
+
+section input {
+	padding: 0.5rem 1rem 0.5rem 5rem;
+	background-repeat: no-repeat;
+	background-image: url(../img/search.png);
+	background-size: auto 70%;
+	background-position: 0.8rem center;
+	color: orange;
+}
+
+section a:hover {
+	border-color: orange;
+	color: orange;
+	transition: 0.3s;
+}
+
+section input:focus {
+	border-color: orange;
+	transition: 0.3s;
+}
+
+section input, section a {
+	outline: none;
+	border: 2px solid gray;
+	font-size: 2rem;
+	border-radius: 1rem;
+	width: 100%;
+	transition: 0.3s;
+}
+
+body {
+	background-repeat: no-repeat;
+	background-image: url(../img/wikipedia.jpg);
+	background-size: 60%;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+	display: none;
+}
+
+section {
+	padding: 3rem 0;
+	text-align: center;
+}
+
+footer {
+	text-align: center;	
+	width: 100%;
+	padding-bottom: 1rem;
+	font-size: 1.6rem;
+}
+
+.fixed-footer {
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media only screen and (max-width: 539px) {
+	html {
+		font-size: 8px;
+	}
+	body {
+		background-image: url(../img/wikipedia_small.jpg);
+		background-size: 60%;
+	}
+
+	section a, section input {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+	html {
+		font-size: 8px;
+	}
+	body {
+		background-size: 70%;
+	}
+	section a, section input {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	html {
+		font-size: 8px;
+	}
+	body {
+		background-size: 60%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	html {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	html {
+		font-size: 10px;
+	}
+}

@@ -1,7 +1,4 @@
  $(document).ready(function(){
- 	var md = new MobileDetect(navigator.userAgent),grade = md.mobileGrade();
- 	window.mobileDetect = md;
-
 	$("#menu, #scroll-up").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
@@ -18,5 +15,17 @@
 	});
 
 	new WOW().init();
-});
 
+	$("#form").submit(function() {
+		var form_data = $(this).serialize();
+		$.ajax({
+			type: "POST",
+			url: "send.php",
+			data: form_data,
+			success: function() {
+				alert("Ваше сообщение отпрвлено!");
+			};
+		});	
+    });
+    
+});

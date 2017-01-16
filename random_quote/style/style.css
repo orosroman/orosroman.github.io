@@ -1,0 +1,120 @@
+#quote-section, footer {
+	display: none;
+}
+
+#quote-text {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 2.8rem;
+	text-align: justify;
+}
+
+#quote-text p {
+	margin-bottom: 15px;
+}
+
+#quote-author {
+	text-align: right;
+	font-size: 2.5rem;
+	font-family: 'Indie Flower', cursive;
+}
+
+button {
+	font-size: 2.4rem;
+	padding: 1rem;
+	background-color: rgb(243, 156, 18);
+	border: none;
+	border-radius: 7px;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	margin-top: 0.4rem;
+	transition: 0.35s;
+}
+
+button:hover {
+	background-color: rgba(243, 156, 18, 0.8);
+	transition: 0.35s;
+}
+
+#get-quote {
+	float: right;
+}
+
+.fa {
+	color: rgb(243, 156, 18);
+	transition: 0.35s;
+}
+
+#twitter {
+	font-size: 6.15rem;
+}
+
+.fa-twitter-square:hover {
+	color: rgba(243, 156, 18, 0.8);
+	transition: 0.35s;
+}
+
+.vertical-align {
+	line-height: 3.2rem;
+}
+
+footer {
+	margin: 0 15px;
+}
+
+footer p {
+	padding-top: 35px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+footer a {
+	color: rgb(243, 156, 18);
+	transition: 0.35s;
+}
+footer a:hover {
+	color: rgba(243, 156, 18, 0.8);
+	text-decoration: none;
+	transition: 0.35s;
+}
+
+main {
+	padding-top: 180px;
+}
+
+@media only screen and (max-width: 540px) {
+	html {
+		font-size: 7px;
+	}
+	main {
+		padding-top: 150px;
+	}
+}
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+	html {
+		font-size: 8px;
+	}
+	main {
+		padding-top: 150px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	html {
+		font-size: 9px;
+	}
+	main {
+		padding-top: 160px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	html {
+		font-size: 10px;
+	}
+
+	main {
+		padding-top: 170px;
+	}
+}

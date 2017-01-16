@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro Clock</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lemonada:600" rel="stylesheet">
+	<audio>
+		<source src="http://www.myinstants.com/media/sounds/alert-hq.mp3"></source>
+	</audio>
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+	<main>
+		<h1>Pomodoro Clock</h1>
+		<div class="control">
+			<div>
+				<div class="left">
+					<span class="control-mode">SESSION LENGTH</span><br>
+					<span class="control-key" id="session-minus">–&nbsp;&nbsp;</span>
+					<span class="control-key" id="session">25</span>
+					<span class="control-key" id="session-plus">&nbsp;&nbsp;+</span><br>
+					<button class="btn btn-success" id="start-stop"></button>
+				</div>
+			</div>
+			<div>
+				<div class="right">
+					<span class="control-mode">BREAK LENGTH</span><br>
+					<span class="control-key" id="break-minus">–&nbsp;&nbsp;</span>
+					<span class="control-key" id="break">5</span>
+					<span class="control-key" id="break-plus">&nbsp;&nbsp;+</span><br>
+					<button class="btn btn-warning" id="reset">Reset</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="pomodoro">
+			<p id="status"></p>
+			<p id="display-timer">timer</p>
+		</div>		
+		<div class="container">
+			<div class="progress">
+				<div id="progress" class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright © 2016. All Rights Reserved | Designed & Coded by <a href="https://www.facebook.com/oros.roman" target="_blank">Roman Oros</a>.</p>
+	</footer>
+</body>
+</html>

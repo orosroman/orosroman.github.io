@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+	<section>
+		<div class="modal fade" id="modalWin" role="dialog">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p id="message"></p>
+						<p>Choose X or O?</p>
+						<button data-dismiss="modal">X</button>
+						<button data-dismiss="modal">O</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<main>
+		<h1>Tic Tac Toe</h1>
+		<div class="score">
+			<span id="player-score">Player: 0</span>&nbsp;&nbsp;&nbsp;
+			<span id="computer-score">Computer: 0</span>&nbsp;&nbsp;&nbsp;
+			<button id="reset-but">Reset All</button>
+		</div>
+		<div class="show-turn">
+			<p id="turn"></p>
+		</div>
+		<div class="container-table">
+			<table>
+				<tr>
+					<td id="sq0" class="square"></td>
+					<td id="sq1" class="square"></td>
+					<td id="sq2" class="square"></td>
+				</tr>
+				<tr>
+					<td id="sq3" class="square"></td>
+					<td id="sq4" class="square"></td>
+					<td id="sq5" class="square"></td>
+				</tr>
+				<tr>
+					<td id="sq6" class="square"></td>
+					<td id="sq7" class="square"></td>
+					<td id="sq8" class="square"></td>
+				</tr>
+			</table>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright © 2016. All Rights Reserved | Designed & Coded by <a href="https://www.facebook.com/oros.roman" target="_blank">Roman Oros</a>.</p>
+	</footer>
+</body>
+</html>

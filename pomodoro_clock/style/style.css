@@ -1,0 +1,109 @@
+* {
+	text-align: center;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+h1 {
+	font-weight: bold;
+	font-family: 'Lemonada', cursive;
+	font-size: 6rem;
+}
+
+#break-minus, #break-plus, #session-minus, #session-plus {
+	cursor: pointer;
+}
+
+.control > div {
+	width: 50%;
+	float: left;
+}
+
+.left, .right {
+	width: 160px;
+}
+
+.left {
+	float: right;
+}
+
+.right {
+	float: left;
+}
+
+.control-mode {
+	font-size: 1.4rem;
+}
+
+.control-key {
+	font-size: 3rem;
+}
+
+.control::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.control {
+	padding-top: 10px;
+}
+
+.pomodoro {
+	width: 320px;
+	height: 320px;
+	background-image: url(../img/pomodoro.png);
+	margin: 0 auto 15px auto;
+	padding-top: 10rem;
+}
+
+#display-timer {
+	font-size: 6rem;	
+}
+
+#status {
+	font-size: 3rem;
+}
+
+#display-timer, #status {
+	color: white;
+}
+
+.btn {
+	width: 140px;
+	margin: 10px 0;
+	font-size: 1.8rem;
+	outline: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+body {
+	background-color: #CDDC39;
+}
+
+html {
+	font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 8px;
+	}
+	h1 {
+		font-size: 5rem;
+	}
+	.control {
+		padding-top: 0;
+	}
+	.pomodoro {
+		width: 250px;
+		height: 250px;
+		background-image: url(../img/pomodoro_mini.png);
+	}
+}

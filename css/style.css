@@ -6,13 +6,8 @@ body {
 	text-align: center;
 }
 
-@font-face {
-	font-family: KaushanScript-Regular;
-	src: url(../fonts/KaushanScript-Regular.otf);
-}
-
 .navbar-brand {
-	font-family: KaushanScript-Regular;
+	font-family: 'Kaushan Script', cursive;
 }
 
 .navbar-brand span:first-child {
@@ -153,7 +148,7 @@ img {
 	transition: 0.4s;
 }
 
-html:not(.mobile) .portfolio-item:hover .zoom {
+.portfolio-item:hover .zoom {
 	display: block;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
