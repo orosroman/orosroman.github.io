@@ -22,13 +22,7 @@
 			type: "POST",
 			url: "../send.php",
 			data: form_data,
-			success: function() {
-				alert("Message was sended!");
-			};
-			error: function() {
-				alert("Error!");
-			};
-		});	
-    });
+		});
+	});
     
 });
